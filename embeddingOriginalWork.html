@@ -9,8 +9,20 @@
         My chinese name is 邱皓（Qiu Hao）
         Here is a vedio: 
         <a href="https://www.youtube.com/watch?v=BBVLj_PSsZ8">Vedio</a>
-        Here is a map:
-        <a href="https://www.google.com/maps"><map name="google"></map></a>
+        <div id="map" style="width:400px;height:400px;background:yellow"></div>
+
+<script>
+function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.12),
+    zoom: 10,
+    mapTypeId: google.maps.MapTypeId.HYBRID
+}
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
         <iframe width="560" height="315" 
         src="https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG" frameborder="0" allow="autoplay; 
         encrypted-media" allowfullscreen></iframe>
